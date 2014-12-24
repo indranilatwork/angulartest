@@ -1,0 +1,17 @@
+/* 
+    Document   : app
+    Created on : 20 Sep, 2014, 12:46:58 PM
+    Author     : innofied
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+/*lib css*/
+@import url("bootstrap.min.css");
+@import url("font-awesome.min.css");
+@import url("loginPageStyle.css");
+@import url("style.css");
+@import url("contentstyle.css");
+@import url("responsive.css");
+@import url("../../../bower_components/toastr/toastr.css");

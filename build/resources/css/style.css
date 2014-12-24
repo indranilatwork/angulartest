@@ -1,0 +1,52 @@
+/* 
+    Document   : style.css
+    Created on : 13 Nov, 2014, 1:01:15 AM
+    Author     : innofied
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.btn-loading-icon{
+    margin-right: 10px;
+}
+.section-msg{
+    border-radius: 0px !important;
+    padding: 5px 10px !important;
+}
+.close{
+    outline: none !important;
+}
+div.error{
+    color : #a94442;
+}
+.input-group input.error+div.error{
+    position: absolute;
+    top: 100%;
+}
+
+.my-idea.idea-tag {
+    display: inherit;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+.loading{
+    color: rgb(153, 153, 245);
+    font-size: 30px;
+    text-align: center;
+}
+.white-text{
+    color: #fff;
+}
+
+.animation{
+    -webkit-transition-property: margin-left; /* Safari */
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-property: margin-left;
+    transition-duration: .5s;
+    -moz-transition-property: margin-left;
+    -moz-transition-duration: .5s;
+    -o-transition-property: margin-left;
+    -o-transition-duration: .5s;
+}

@@ -1,0 +1,104 @@
+<div class="login-contents-wrapper">
+    <!-- Logo Part Starts -->
+    <div class="logo-container">
+        <img class="login-logo" src="resources/images/incubatizelogo.png">
+    </div>
+    <!-- Logo Part Ends -->
+
+    <div class="login-content">
+        <div class="login-form-container login-content">
+
+            <!-- Login Panel Starts -->
+            <div class="login-panel-wrapper">
+                <div class="panel panel-default">
+
+                    <!-- Login Panel Header Starts -->
+                    <div class="panel-heading">
+                        <h3 class="panel-title login-header">Login</h3>
+                    </div>
+                    <message></message>
+                    <!-- Login Panel Header Ends -->
+
+                    <!-- Login Panel Body Starts -->
+                    <div class="panel-body">
+                        <form name="login_form" onsubmit="return false;">
+                            <!-- Input Group Part Starts -->
+                            <div class="input-group username-group">
+                                <span class="input-group-addon user-icon-wrapper">
+                                    <span class="glyphicon glyphicon-user user-icon"></span>
+                                </span>
+                                <input type="text" class="form-control username-holder" value="" name="email"  ng-model="loginCredentials.email"  placeholder="Username">
+                            </div>
+                            <div class="input-group password-group">
+                                <span class="input-group-addon lock-icon-wrapper">
+                                    <span class="glyphicon glyphicon-lock lock-icon"></span>
+                                </span>
+                                <input type="password" class="form-control password-holder"  name="password" value="" ng-model="loginCredentials.password" placeholder="Password">
+                            </div>
+                        </form>
+                        <!-- Input Group Part Ends -->
+
+                        <!-- Checkbox Part Starts -->
+                        <div class="col-xs-12 check-box-wrapper">
+                            <input type="checkbox" data-btn-name="remember_me" class="checkbox-icon">
+                            <span class="checkbox-text">Remember Me</span>
+                        </div>
+                        <!-- Checkbox Part Ends -->
+
+                        <!-- Login Enter Button Starts -->
+                        <div class="col-xs-12 enter-button-wrapper">
+                            <button type="button" class="btn btn-primary btn-lg btn-block enter-button" ng-click="doSignIn()" data-btn-name="login_btn">
+                                Enter
+                                <span ng-show="loading">
+                                    <i class="fa fa-spinner fa-spin"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Login Enter Button Ends -->
+
+                    </div>
+                    <!-- Login Panel Body Ends -->
+
+                    <!-- Login Panel Footer Starts -->
+                    <div class="panel-footer footer-container">
+
+                        <!-- Login Box Starts -->
+                        <div class="footer-login-box">
+                            Login Using
+                        </div>
+                        <!-- Login Box Ends -->
+
+                        <!-- Login Icon Part Starts -->
+                        <div class="icon-container">
+                            <a href="#" class="facebook">
+                                <img src="resources/images/fb.png">
+                            </a>
+                            <a href="#" class="twitter">
+                                <img src="resources/images/twt.png">
+                            </a>
+                            <a href="#" class="google">
+                                <img src="resources/images/g+.png">
+                            </a>
+                        </div>
+                        <!-- Login Icon Part Ends -->
+
+                    </div>
+                    <!-- Login Panel Footer Ends -->
+
+                </div>
+            </div>
+            <!-- Login Panel Ends -->
+            <!-- Create Account Part Starts -->
+            <div class="row create-account-wrapper">
+                <a href="" class="create-account">Create Account</a>
+            </div>
+            <!-- Create Account Part Ends -->
+        </div>
+        <!-- Login Form Part Ends -->
+
+    </div>
+    <div class="login-footer login-footer-text">
+        <span>© Copyright 2014,&nbsp</span>INCUBATIZE
+    </div>
+
+</div>

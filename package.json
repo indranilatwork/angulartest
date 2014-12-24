@@ -1,0 +1,66 @@
+{
+    "name": "AngularDemo",
+    "version": "0.0.1",
+    "description": "Angular Demo",
+    "main": "index.js",
+    "scripts": {
+        "start": "watchify -t partialify index.js -o build/bundle.js -v",
+        "bundle": "browserify -t partialify index.js -o build/bundle.js"
+    },
+    "dependencies": {
+        "watchify" : "",
+        "partialify" : "",
+        "browserify-shim": ""
+    },
+    "devDependencies": {
+         "watchify" : "",
+        "browserify": "^5.11.2"
+    },
+    "browser": {
+        "angular": "./bower_components/angular/angular.js",
+        "angularBootstrapTpl": "./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js",
+        "angularBootstrap" : "./bower_components/angular-bootstrap/ui-bootstrap.min.js",
+        "angularRouter" : "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
+        "jquery": "./bower_components/jquery/dist/jquery.js",
+        "underscore": "./bower_components/underscore/underscore.js",
+        "jqueryValidater": "./bower_components/jquery-validation/dist/jquery.validate.js",
+        "toastr": "./bower_components/toastr/toastr.min.js"
+    },
+    "browserify-shim": {
+        "angular": {
+            "exports": "angular"
+        },
+        "angularBootstrapTpl": {
+            "depends": ["angular"],
+            "exports": "angularBootstrapTpl"
+        },
+          "angularBootstrap": {
+            "depends": ["angular"],
+            "exports": "angularBootstrap"
+        },
+        "angularRouter": {
+            "depends": ["angular"],
+            "exports": "angularRouter"
+        },
+        "jquery": {
+            "exports": "$"
+        },
+        "underscore": {
+            "exports": "_"
+        },
+        "jqueryValidater": {
+            "depends": ["jquery"],
+            "exports": "jqueryValidater"
+        },
+        "toastr": {
+            "depends": ["jquery"],
+            "exports": "toastr"
+        }
+    },
+    "browserify": {
+        "transform": [
+        "browserify-shim"
+        ]
+    },
+    "author": "Innofied"
+}

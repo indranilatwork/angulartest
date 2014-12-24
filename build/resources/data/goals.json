@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "goals" : [{
+        "title" : "goal1",
+        "user" : {
+            "name" : "Indranil Mondal",
+            "photo" : "resources/images/1.jpg"
+        },
+        "totalLike" : "4",
+        "idea" : {
+            "title" : "Idea1"
+        },
+        "description" : "test"
+    },{
+        "title" : "goal2",
+          "user" : {
+            "name" : "Indranil Mondal",
+            "photo" : "resources/images/1.jpg"
+        },
+        "totalLike" : "4",
+        "idea" : {
+            "title" : "Idea1"
+        },
+        "description" : "test"
+    }]
+}

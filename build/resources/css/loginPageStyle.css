@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'CorbertRegular';
+    -webkit-font-smoothing: antialiased;
+}
+div, h1, h2, h3, h4, h5, h6, p, ul, li {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+html, body {
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'CorbertRegular';
+    src: url('corbert-regular.eot');
+    src: url('corbert-regular.eot') format('embedded-opentype'), url('corbert-regular.woff2') format('woff2'), url('corbert-regular.woff') format('woff'), url('corbert-regular.ttf') format('truetype'), url('corbert-regular.svg#CorbertRegular') format('svg');
+}
+.login-contents-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.background {
+    background: #2d3e50 url("../images/background.png") repeat left top;
+    -webkit-font-smoothing: antialiased;
+}
+.logo-container {
+    padding: 40px 0px;
+    text-align: center;
+}
+.login-logo {
+    width: 222px;
+    height: auto;
+}
+/************************* Panel Starts ******************************/
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.login-panel-wrapper {
+    width: 350px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.login-panel-wrapper .panel-body {
+    padding-top: 0px;
+}
+/************************* Panel Header starts ***********************/
+
+.login-header {
+    font-family: 'CorbertRegular';
+    color: #2a729b;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+/************************* Panel Header Ends *************************/
+/************************* Input Group Starts ************************/
+
+.username-group, .password-group {
+    margin: 20px 10px;
+}
+.user-icon-wrapper, .lock-icon-wrapper {
+    border-width: 0px 1px 1px 0px;
+    border-color: rgb(169, 164, 164);
+    border-style: dotted;
+    border-radius: 0px;
+    background-color: transparent;
+}
+.username-holder, .password-holder {
+    box-shadow: none;
+    border-width: 0px 0px 1px 1px;
+    border-style: dotted;
+    border-color: rgb(169, 164, 164);
+    border-radius: 0px;
+}
+.username-holder:focus, .password-holder:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-color: rgb(169, 164, 164);
+}
+/************************* Input Group Ends ************************/
+/************************* Checkbox Panel Starts *******************/
+
+.check-box-wrapper {
+    margin-top: 8px;
+    margin-bottom: 25px;
+    text-align: right;
+}
+.checkbox-text {
+    margin-left: 8px;
+    color: #595353;
+    font-weight: bold;
+    width: 100%;
+}
+/************************* Checkbox Panel Ends *******************/
+/************************* Enter Button Starts *******************/
+
+.enter-button-wrapper {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.enter-button {
+    font-weight: bold;
+    margin-bottom: 17px;
+    outline: none;
+}
+.enter-button:focus {
+    outline: none !important;
+}
+/************************* Enter Button Ends *********************/
+/************************* Panel Footer Starts *******************/
+
+.footer-container {
+    background-color: transparent;
+    position: relative;
+}
+.footer-login-box {
+    background-color: #fff;
+    min-width: 100px;
+    padding: 1px 0px;
+    position: absolute;
+    top: -10px;
+    left: 36%;
+    font-size: 13px;
+    color: #2a729b;
+    text-align: center;
+    font-weight: bold;
+}
+.icon-container {
+    text-align: center;
+    margin: 9px 0px 15px;
+}
+.icon-container img {
+    width: 35px;
+    height: auto;
+}
+.icon-container a {
+    margin: 0px 2px;
+}
+/************************* Panel Footer Ends *********************/
+/************************* Panel Ends ******************************/
+/************************* Create Account Part Starts ************/
+
+.create-account-wrapper {
+    text-align: center;
+}
+.create-account {
+    color: #fff;
+    font-size: 13px;
+}
+.create-account:hover {
+    color: #2a729b;
+    text-decoration: none;
+}
+/************************* Create Account Part Ends ************/
+/************************* Footer Starts ***********************/
+
+.login-footer-text {
+    color: #fff;
+    border-top: 1px solid #475767;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+}
+.login-footer-text span {
+    color: #2a729b;
+}
+/************************* Footer Ends ***********************/
+
+@media (max-width: 540px) {
+    .login-panel-wrapper {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer-login-box {
+        left: 34%;
+    }
+    .logo-container {
+        padding: 20px 0px;
+    }
+    .check-box-wrapper {
+        margin-top: 0px;
+        margin-bottom: 17px;
+        text-align: right;
+    }
+}
+@media (min-width: 320px) and (max-width: 330px) {
+    .footer-login-box {
+        left: 30%;
+    }
+    .login-panel-wrapper {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/************ footer style ******************/
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.login-content {
+    padding: 0px 10px 40px;
+    /* Height of the footer element */
+}
+.login-footer {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,6 @@
+<div ng-hide="!message.showMessage"  ng-init="resetMessage()">
+    <alert type="{{message.type}}" close="closeAlert()">
+        <p ng-repeat="messageText in message.messages">{{messageText}}</p>
+    </alert>
+</div>
+
