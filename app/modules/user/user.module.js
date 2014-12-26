@@ -6,7 +6,7 @@ commonModule = require('../common/common.module'),
 User = angular.module('app.user', ['ui.router', 'ui.bootstrap','app.common'])
 .factory('loggedInUser',require('./factory/userdata'))
 
-.controller('LoginController', ['$scope', '$http', '$state', require('./controllers/signin')])
+.controller('LoginController', require('./controllers/signin'))
 
 .controller('UserController', require('./controllers/user'))
 

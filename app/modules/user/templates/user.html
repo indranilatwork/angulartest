@@ -1,107 +1,6 @@
-
-<div class="navigation-mobile" data-block-name="navigation_mobile">
-    <div class="navigation-header-logo">
-        <img src="resources/images/incubatize_logo_ipad.png">
-    </div>
-    <div class="navigation-list-wrapper">
-        <ul class="nav nav-pills nav-stacked navigation-list">
-            <li>
-                <a>
-                    <span class="new-idea"></span>
-                    <div class="navigation-text">New Idea</div>
-                </a>
-            </li>
-            <li data-btn-name="menu_item" data-menu-name="ideas">
-                <a>
-                    <span class="idea-stream"></span>
-                    <div class="navigation-text">Idea Stream</div>
-                </a>
-            </li>
-            <li data-btn-name="menu_item" data-menu-name="goals">
-                <a>
-                    <span class="goals"></span>
-                    <div class="navigation-text">Goals</div>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <span class="analysis"></span>
-                    <div class="navigation-text">Analysis</div>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <span class="leaderboard"></span>
-                    <div class="navigation-text">LeaderBoard</div>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <span class="quick-captures"></span>
-                    <div class="navigation-text">Quick Captures</div>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <span class="manage-team"></span>
-                    <div class="navigation-text">Manage Team</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="navigation-tab">
-    <div class="navigation-header-logo">
-        <img src="resources/images/incubatize_logo_ipad.png">
-    </div>
-    <div class="navigation-list-wrapper">
-        <ul class="nav nav-pills nav-stacked navigation-list">
-            <li>
-                <a>
-                    <div class="new-idea-tab"></div>
-                    <div class="navigation-text">New Idea</div>
-                </a>
-            </li>
-            <li data-btn-name="menu_item" data-menu-name="ideas">
-                <a>
-                    <div class="idea-stream-tab"></div>
-                    <div class="navigation-text">Idea Stream</div>
-                </a>
-            </li>
-            <li data-btn-name="menu_item" data-menu-name="goals">
-                <a>
-                    <div class="goals-tab"></div>
-                    <div class="navigation-text">Goals</div>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <div class="analysis-tab"></div>
-                    <div class="navigation-text">Analysis</div>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <div class="leaderboard-tab"></div>
-                    <div class="navigation-text">LeaderBoard</div>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <div class="quick-captures-tab"></div>
-                    <div class="navigation-text">Quick Captures</div>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <div class="manage-team-tab"></div>
-                    <div class="navigation-text">Manage Team</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="slide animation" data-block-name="slidling_content">
+<mobilemenu></mobilemenu>
+<tabmenu></tabmenu>
+<div class="slide animation">
     <!-- *************** Content Header Starts *************************** -->
     <div class="row content-header" >
         <div class="col-xs-12 header-menu">
@@ -158,61 +57,14 @@
     <!-- *********************** Content Starts ************************* -->
     <div class="row content-wrapper">
         <!-- ******************* Left side Navigation Starts ********************* -->
-        <div class="navigation-desktop">
-            <div class="navigation-list-wrapper">
-                <ul class="nav nav-pills nav-stacked navigation-list">
-                    <li>
-                        <a>
-                            <span class="new-idea"></span>
-                            <div class="navigation-text">New Idea</div>
-                        </a>
-                    </li>
-                    <li data-btn-name="menu_item" data-menu-name="ideas">
-                        <a>
-                            <span class="idea-stream"></span>
-                            <div class="navigation-text">Idea Stream</div>
-                        </a>
-                    </li>
-                    <li data-btn-name="menu_item" data-menu-name="goals">
-                        <a>
-                            <span class="goals"></span>
-                            <div class="navigation-text">Goals</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span class="analysis"></span>
-                            <div class="navigation-text">Analysis</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span class="leaderboard"></span>
-                            <div class="navigation-text">LeaderBoard</div>
-                        </a>
-                    </li>
-                    <li class="list-item-selected">
-                        <a>
-                            <span class="quick-captures"></span>
-                            <div class="navigation-text">Quick Captures</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span class="manage-team"></span>
-                            <div class="navigation-text">Manage Team</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <desktopmenu>       </desktopmenu>
         <!-- ******************* Left side Navigation Ends *********************** -->
         <div class="idea-feed" ui-view>
 
         </div>
         <!-- *********** Idea Feed Ends ********************************** -->
         <!-- *********** Notifications Starts **************************** -->
-        <div class="notifications" data-block-name="right_pane">
+        <div class="notifications">
 
         </div>
         <!-- *********** Notifications Ends ****************************** -->

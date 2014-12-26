@@ -17,8 +17,7 @@ function($scope, $http, $state,$rootScope,loggedInUser) {
         .success(function(response){
            if(response.success){
                $scope.user = response;
-               loggedInUser.data = response;
-               console.log("data loaded",loggedInUser);
+               loggedInUser.setData(response);
                $rootScope.$broadcast('userdataloaded');
            }else{
                toastr.error(lang.errorMsg.defaultError, 'Error!');

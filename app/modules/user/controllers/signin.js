@@ -1,5 +1,9 @@
 'use strict';
-module.exports = function($scope, $http, $state) {
+module.exports = [
+    '$scope', 
+    '$http', 
+    '$state',
+    function($scope, $http, $state) {
 
     var util = require('../../../util/util'),
     lang = require('../../../lang/lang'),
@@ -71,4 +75,4 @@ module.exports = function($scope, $http, $state) {
                 }; 
         });
     }
-};
+}];
