@@ -1,8 +1,7 @@
 'use strict';
 module.exports = function() {
 
-    var util = require('../../../util/util'),
-    appData = {
+    var appData = {
         selectedMenu : ""
      };
      appData.setData = function(data) {

@@ -1,9 +1,8 @@
 'use strict';
 
-var util = require('../../util/util'),
-commonModule = require('../common/common.module'),
+var commonModule = require('../common/common.module'),
 
-User = angular.module('app.user', ['ui.router', 'ui.bootstrap','app.common'])
+User = angular.module('app.user', ['ui.router','app.common'])
 .factory('loggedInUser',require('./factory/userdata'))
 
 .controller('LoginController', require('./controllers/signin'))

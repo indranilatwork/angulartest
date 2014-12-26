@@ -1,8 +1,6 @@
 'use strict';
 
-var util = require('../../util/util'),
-
-Goal = angular.module('app.goal', ['ui.router', 'ui.bootstrap'])
+var Goal = angular.module('app.goal', ['ui.router'])
 .controller('GoalsController',  require('./controllers/goals'))
 .config(require('./router/router'));
 

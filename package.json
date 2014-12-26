@@ -19,7 +19,6 @@
     "browser": {
         "angular": "./bower_components/angular/angular.js",
         "angularBootstrapTpl": "./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js",
-        "angularBootstrap" : "./bower_components/angular-bootstrap/ui-bootstrap.min.js",
         "angularRouter" : "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
         "jquery": "./bower_components/jquery/dist/jquery.js",
         "underscore": "./bower_components/underscore/underscore.js",
@@ -34,10 +33,7 @@
             "depends": ["angular"],
             "exports": "angularBootstrapTpl"
         },
-          "angularBootstrap": {
-            "depends": ["angular"],
-            "exports": "angularBootstrap"
-        },
+      
         "angularRouter": {
             "depends": ["angular"],
             "exports": "angularRouter"
