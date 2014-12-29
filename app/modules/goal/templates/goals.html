@@ -1,116 +1,111 @@
 <div class="idea-feed-wrapper">
-<div class="idea-feed-search">
-                        <div class="search-wrapper">
-                            <span class="search-icon"></span>
-                            <input type="search" class="idea-feed-searchfield" placeholder="Search for People, Goal, Tags and more...">
-                        </div>
-                        <div class="idea-feed-sorters pull-right">
-                            <span class="sorter-header">Sort By:</span>
-                            <span class="sorter-list-options">
-                                <ul class="sorter-list list-inline">
-                                    <li><a>Recent</a>
-                                    </li>
-                                    <li><a>By Goal</a>
-                                    </li>
-                                    <li><a>By Total Likes</a>
-                                    </li>
-                                    <li><a>Total Average IPA</a>
-                                    </li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>                   
-                    <div data-block-name="idea_list_block">
-                        <div class="panel panel-default" ng-repeat="goal in goals">
-                              <div class="idea-tag my-idea">
-                            <img src="resources/images/my-idea-tag.png">
-                        </div>
-                        <div class="panel-body comments-data-wrapper">
-                            <div class="row issue-wrapper">
-                                <div class="col-xs-2 issue-header-container">
-                                    <div class="profile-image-wrapper">
-                                        <div>
-                                            <img class="status-image" ng-src="{{goal.user.photo}}">
-                                        </div>
-                                    </div>
-                                    <div class="like-icon-wrapper">
-                                        <div class="like-icon">
-                                            <div class="like-icon-holder like-icon-image"></div>
-                                            <div><span>{{goal.totalLike}}</span> 
-                                            <span>Likes</span>
-                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-10 issue-details-container">
-                                    <div class="issue-header">
-                                         {{goal.title}}
-                                        <p>
-                                            {{goal.user.name}},&nbsp;
-                                            <span>
+  <div class="idea-feed-search">
+    <div class="search-wrapper">
+      <span class="search-icon"></span>
+      <input type="search" class="idea-feed-searchfield" placeholder="Search for People, Goal, Tags and more...">
+    </div>
+    <div class="idea-feed-sorters pull-right">
+      <span class="sorter-header">Sort By:</span>
+      <span class="sorter-list-options">
+        <ul class="sorter-list list-inline">
+            <li><a>Recent</a></li>
+            <li><a>By Goal</a></li>
+            <li><a>By Total Likes</a></li>
+            <li><a>Total Average IPA</a></li>
+        </ul>
+      </span>
+    </div>
+  </div>
+  <div data-block-name="idea_list_block">
+    <div class="panel panel-default" ng-repeat="goal in goals">
+      <div class="idea-tag my-idea">
+        <img src="resources/images/my-idea-tag.png">
+      </div>
+      <div class="panel-body comments-data-wrapper">
+        <div class="row issue-wrapper">
+          <div class="col-xs-2 issue-header-container">
+            <div class="profile-image-wrapper">
+              <div>
+                <img class="status-image" ng-src="{{goal.user.photo}}">
+              </div>
+            </div>
+            <div class="like-icon-wrapper">
+              <div class="like-icon">
+                <div class="like-icon-holder like-icon-image"></div>
+                <div><span>{{goal.totalLike}}</span>
+                  <span>Likes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-10 issue-details-container">
+            <div class="issue-header">
+              {{goal.title}}
+              <p>
+                {{goal.user.name}},&nbsp;
+                <span>
                                                 21, Dec 2014
                                             </span>
-                                        </p>
-                                    </div>
-                                    <div class="issue-details">
-                                        {{goal.description}}
-                                        <div class="issue-resolved">
-                                            <span class="issue-icon"></span>
-                                            <span class="issue-text">
+              </p>
+            </div>
+            <div class="issue-details">
+              {{goal.description}}
+              <div class="issue-resolved">
+                <span class="issue-icon"></span>
+                <span class="issue-text">
                                                   {{goal.idea.title}}
                                             </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ********** Mobile *********** -->
-                            <div class="idea-header-container-mobile">
-                                <div class="issue-header">
-                                   {{goal.title}}
-                                </div>
-                                <div class="images-container-mobile">
-                                    <div class="pull-left">
-                                        <div class="profile-image-mobile">
-                                            <img class="status-image" ng-src="{{goal.user.photo}}">
-                                        </div>
-                                        <div class="profile-image-text">
-                                             {{goal.user.name}}&nbsp;
-                                            <span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ********** Mobile *********** -->
+        <div class="idea-header-container-mobile">
+          <div class="issue-header">
+            {{goal.title}}
+          </div>
+          <div class="images-container-mobile">
+            <div class="pull-left">
+              <div class="profile-image-mobile">
+                <img class="status-image" ng-src="{{goal.user.photo}}">
+              </div>
+              <div class="profile-image-text">
+                {{goal.user.name}}&nbsp;
+                <span>
                                              21, Dec 2014
                                             </span>
-                                        </div>
-                                    </div>
-                                    <div class="like-vote-wrapper pull-right">
-                                        <div class="like-icon-wrapper-mobile">
-                                            <div class="like-icon-holder like-icon-image"></div>
-                                        </div>
-                                        <div class="votes-mobile"><span>{{goal.totalLike}}</span>
-                                            <span>Likes</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="idea-feed-details-mobile">
-                                <div class="issue-details-mobile">
-                                     {{goal.description}}
-                                </div>
-                                <div>
-                                    <span class="issue-icon"></span>
-                                    <div class="issue-text-mobile">
-                                        {{goal.idea.title}}
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        </div>
-                        </div>
-                        
-                    </div>
-                    <div class="loading" data-block-name="loading_block">
-                        <span ng-show="loading">
+              </div>
+            </div>
+            <div class="like-vote-wrapper pull-right">
+              <div class="like-icon-wrapper-mobile">
+                <div class="like-icon-holder like-icon-image"></div>
+              </div>
+              <div class="votes-mobile"><span>{{goal.totalLike}}</span>
+                <span>Likes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="idea-feed-details-mobile">
+          <div class="issue-details-mobile">
+            {{goal.description}}
+          </div>
+          <div>
+            <span class="issue-icon"></span>
+            <div class="issue-text-mobile">
+              {{goal.idea.title}}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="loading" data-block-name="loading_block">
+    <span ng-show="loading">
                                     <i class="fa fa-spinner fa-spin"></i>
                                 </span>
-                    </div>
+  </div>
 
 </div>
-

@@ -1,0 +1,23 @@
+<div class="notifications-list-header" ng-init="getNotifications()">
+    <div class="notification-list-header-container">
+        <i class="fa fa-bell"></i>
+        <span class="notification-header">Notifications</span>
+    </div>
+    <ul class="notification-list">
+        <li ng-repeat="notification in notifications">
+            <div class="vertical-dash"></div>
+            <div class="notification-bullet"><i class="fa fa-comment"></i>
+            </div>
+            <div class="horizontal-dash">
+                <span></span>
+            </div>
+            <div class="notification-content-wrapper">
+                <div class="notification-content">
+                    <img ng-src="{{notification.photoUrl}}">
+                    <div class="notification-text">{{notification.notificationText}}</div>
+                </div>
+                <div class="notification-time pull-right">{{notification.date}}</div>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/var/www/apps/angular/angulartest/app/lang/lang.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/var/www/MyProjects/study/angular/angulartest/app/lang/lang.js":[function(require,module,exports){
 'use strict';
 var lang = {
   validationMessages: {
@@ -18,7 +18,7 @@ var lang = {
 };
 module.exports = lang;
 
-},{}],"/var/www/apps/angular/angulartest/app/modules/application/app.module.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/application/app.module.js":[function(require,module,exports){
 'use strict';
 
 var userModule = require('../user/user.module'),
@@ -29,7 +29,7 @@ var App = angular.module('app', ['ui.router', 'app.user', 'app.goal'])
 
 module.exports = App;
 
-},{"../goal/goal.module":"/var/www/apps/angular/angulartest/app/modules/goal/goal.module.js","../user/user.module":"/var/www/apps/angular/angulartest/app/modules/user/user.module.js","./factory/appdata":"/var/www/apps/angular/angulartest/app/modules/application/factory/appdata.js"}],"/var/www/apps/angular/angulartest/app/modules/application/factory/appdata.js":[function(require,module,exports){
+},{"../goal/goal.module":"/var/www/MyProjects/study/angular/angulartest/app/modules/goal/goal.module.js","../user/user.module":"/var/www/MyProjects/study/angular/angulartest/app/modules/user/user.module.js","./factory/appdata":"/var/www/MyProjects/study/angular/angulartest/app/modules/application/factory/appdata.js"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/application/factory/appdata.js":[function(require,module,exports){
 'use strict';
 module.exports = function() {
 
@@ -48,17 +48,18 @@ module.exports = function() {
 
 
 
-},{}],"/var/www/apps/angular/angulartest/app/modules/common/common.module.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/common.module.js":[function(require,module,exports){
 'use strict';
 
 var Common = angular.module('app.common', ['ui.bootstrap'])
 .directive('message',require('./directives/message'))
 .directive('mobilemenu',require('./directives/mobilemenu'))
 .directive('tabmenu',require('./directives/tabmenu'))
-.directive('desktopmenu',require('./directives/desktopmenu'));
+.directive('desktopmenu',require('./directives/desktopmenu'))
+// .directive('notifications', require('./directives/notification'));
 
 module.exports = Common;
-},{"./directives/desktopmenu":"/var/www/apps/angular/angulartest/app/modules/common/directives/desktopmenu.js","./directives/message":"/var/www/apps/angular/angulartest/app/modules/common/directives/message.js","./directives/mobilemenu":"/var/www/apps/angular/angulartest/app/modules/common/directives/mobilemenu.js","./directives/tabmenu":"/var/www/apps/angular/angulartest/app/modules/common/directives/tabmenu.js"}],"/var/www/apps/angular/angulartest/app/modules/common/directives/desktopmenu.js":[function(require,module,exports){
+},{"./directives/desktopmenu":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/directives/desktopmenu.js","./directives/message":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/directives/message.js","./directives/mobilemenu":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/directives/mobilemenu.js","./directives/tabmenu":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/directives/tabmenu.js"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/directives/desktopmenu.js":[function(require,module,exports){
 'use strict';
 module.exports = ['appData', function (appData) {
     var directiveDefinitionObject = {
@@ -81,7 +82,7 @@ module.exports = ['appData', function (appData) {
 
 
 
-},{"../templates/desktopmenu.html":"/var/www/apps/angular/angulartest/app/modules/common/templates/desktopmenu.html"}],"/var/www/apps/angular/angulartest/app/modules/common/directives/message.js":[function(require,module,exports){
+},{"../templates/desktopmenu.html":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/templates/desktopmenu.html"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/directives/message.js":[function(require,module,exports){
 'use strict';
 module.exports = function () {
     var directiveDefinitionObject = {
@@ -123,7 +124,7 @@ module.exports = function () {
 
 
 
-},{"../templates/message.html":"/var/www/apps/angular/angulartest/app/modules/common/templates/message.html"}],"/var/www/apps/angular/angulartest/app/modules/common/directives/mobilemenu.js":[function(require,module,exports){
+},{"../templates/message.html":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/templates/message.html"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/directives/mobilemenu.js":[function(require,module,exports){
 'use strict';
 module.exports = ['appData', function (appData) {
     var directiveDefinitionObject = {
@@ -142,7 +143,7 @@ module.exports = ['appData', function (appData) {
 
 
 
-},{"../templates/mobilemenu.html":"/var/www/apps/angular/angulartest/app/modules/common/templates/mobilemenu.html"}],"/var/www/apps/angular/angulartest/app/modules/common/directives/tabmenu.js":[function(require,module,exports){
+},{"../templates/mobilemenu.html":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/templates/mobilemenu.html"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/directives/tabmenu.js":[function(require,module,exports){
 'use strict';
 module.exports = ['appData', function (appData) {
     var directiveDefinitionObject = {
@@ -162,15 +163,15 @@ module.exports = ['appData', function (appData) {
 
 
 
-},{"../templates/tabmenu.html":"/var/www/apps/angular/angulartest/app/modules/common/templates/tabmenu.html"}],"/var/www/apps/angular/angulartest/app/modules/common/templates/desktopmenu.html":[function(require,module,exports){
+},{"../templates/tabmenu.html":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/templates/tabmenu.html"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/templates/desktopmenu.html":[function(require,module,exports){
 module.exports = ' <div class="navigation-desktop">\n            <div class="navigation-list-wrapper">\n                <ul class="nav nav-pills nav-stacked navigation-list">\n                    <li>\n                        <a>\n                            <span class="new-idea"></span>\n                            <div class="navigation-text">New Idea</div>\n                        </a>\n                    </li>\n                    <li>\n                        <a>\n                            <span class="idea-stream"></span>\n                            <div class="navigation-text">Idea Stream</div>\n                        </a>\n                    </li>\n                    <li  ng-class="{\'list-item-selected\': (selectedMenu == \'goal\')}">\n                        <a>\n                            <span class="goals"></span>\n                            <div class="navigation-text">Goals</div>\n                        </a>\n                    </li>\n                    <li>\n                        <a>\n                            <span class="analysis"></span>\n                            <div class="navigation-text">Analysis</div>\n                        </a>\n                    </li>\n                    <li>\n                        <a>\n                            <span class="leaderboard"></span>\n                            <div class="navigation-text">LeaderBoard</div>\n                        </a>\n                    </li>\n                    <li>\n                        <a>\n                            <span class="quick-captures"></span>\n                            <div class="navigation-text">Quick Captures</div>\n                        </a>\n                    </li>\n                    <li>\n                        <a>\n                            <span class="manage-team"></span>\n                            <div class="navigation-text">Manage Team</div>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n';
-},{}],"/var/www/apps/angular/angulartest/app/modules/common/templates/message.html":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/templates/message.html":[function(require,module,exports){
 module.exports = '<div ng-hide="!message.showMessage"  ng-init="resetMessage()">\n    <alert type="{{message.type}}" close="closeAlert()">\n        <p ng-repeat="messageText in message.messages">{{messageText}}</p>\n    </alert>\n</div>\n\n';
-},{}],"/var/www/apps/angular/angulartest/app/modules/common/templates/mobilemenu.html":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/templates/mobilemenu.html":[function(require,module,exports){
 module.exports = '\n<div class="navigation-mobile" data-block-name="navigation_mobile">\n    <div class="navigation-header-logo">\n        <img src="resources/images/incubatize_logo_ipad.png">\n    </div>\n    <div class="navigation-list-wrapper">\n        <ul class="nav nav-pills nav-stacked navigation-list">\n            <li>\n                <a>\n                    <span class="new-idea"></span>\n                    <div class="navigation-text">New Idea</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <span class="idea-stream"></span>\n                    <div class="navigation-text">Idea Stream</div>\n                </a>\n            </li>\n            <li ng-class="{\'list-item-selected\': (selectedMenu == \'goal\')}">\n                <a>\n                    <span class="goals"></span>\n                    <div class="navigation-text">Goals</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <span class="analysis"></span>\n                    <div class="navigation-text">Analysis</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <span class="leaderboard"></span>\n                    <div class="navigation-text">LeaderBoard</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <span class="quick-captures"></span>\n                    <div class="navigation-text">Quick Captures</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <span class="manage-team"></span>\n                    <div class="navigation-text">Manage Team</div>\n                </a>\n            </li>\n        </ul>\n    </div>\n</div>\n';
-},{}],"/var/www/apps/angular/angulartest/app/modules/common/templates/tabmenu.html":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/common/templates/tabmenu.html":[function(require,module,exports){
 module.exports = '<div class="navigation-tab">\n    <div class="navigation-header-logo">\n        <img src="resources/images/incubatize_logo_ipad.png">\n    </div>\n    <div class="navigation-list-wrapper">\n        <ul class="nav nav-pills nav-stacked navigation-list">\n            <li>\n                <a>\n                    <div class="new-idea-tab"></div>\n                    <div class="navigation-text">New Idea</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <div class="idea-stream-tab"></div>\n                    <div class="navigation-text">Idea Stream</div>\n                </a>\n            </li>\n            <li ng-class="{\'list-item-selected\': (selectedMenu == \'goal\')}">\n                <a>\n                    <div class="goals-tab"></div>\n                    <div class="navigation-text">Goals</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <div class="analysis-tab"></div>\n                    <div class="navigation-text">Analysis</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <div class="leaderboard-tab"></div>\n                    <div class="navigation-text">LeaderBoard</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <div class="quick-captures-tab"></div>\n                    <div class="navigation-text">Quick Captures</div>\n                </a>\n            </li>\n            <li>\n                <a>\n                    <div class="manage-team-tab"></div>\n                    <div class="navigation-text">Manage Team</div>\n                </a>\n            </li>\n        </ul>\n    </div>\n</div>\n';
-},{}],"/var/www/apps/angular/angulartest/app/modules/goal/controllers/goals.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/goal/controllers/goals.js":[function(require,module,exports){
 'use strict';
 module.exports = [
     '$scope', '$http', '$state', '$rootScope', 'loggedInUser', 'appData',
@@ -212,42 +213,103 @@ module.exports = [
 
 
 
-},{"../../../lang/lang":"/var/www/apps/angular/angulartest/app/lang/lang.js","../../../util/util":"/var/www/apps/angular/angulartest/app/util/util.js"}],"/var/www/apps/angular/angulartest/app/modules/goal/goal.module.js":[function(require,module,exports){
+},{"../../../lang/lang":"/var/www/MyProjects/study/angular/angulartest/app/lang/lang.js","../../../util/util":"/var/www/MyProjects/study/angular/angulartest/app/util/util.js"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/goal/goal.module.js":[function(require,module,exports){
 'use strict';
+var notificationModule = require('../notification/notification.module'),
 
-var Goal = angular.module('app.goal', ['ui.router'])
-.controller('GoalsController',  require('./controllers/goals'))
-.config(require('./router/router'));
+  Goal = angular.module('app.goal', ['ui.router', 'app.notification'])
+  .controller('GoalsController', require('./controllers/goals'))
+  .config(require('./router/router'));
 
 module.exports = Goal;
-},{"./controllers/goals":"/var/www/apps/angular/angulartest/app/modules/goal/controllers/goals.js","./router/router":"/var/www/apps/angular/angulartest/app/modules/goal/router/router.js"}],"/var/www/apps/angular/angulartest/app/modules/goal/router/router.js":[function(require,module,exports){
+
+},{"../notification/notification.module":"/var/www/MyProjects/study/angular/angulartest/app/modules/notification/notification.module.js","./controllers/goals":"/var/www/MyProjects/study/angular/angulartest/app/modules/goal/controllers/goals.js","./router/router":"/var/www/MyProjects/study/angular/angulartest/app/modules/goal/router/router.js"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/goal/router/router.js":[function(require,module,exports){
 var util = require('../../../util/util');
 module.exports = function($stateProvider, $injector, $urlRouterProvider) {
-    $stateProvider
+  $stateProvider
     .state('user.goals', {
-        url: '/goals',
-        template: require('../templates/goals.html'),
-        resolve:{
-            
-            checkLogin: function ($q,$stateParams) {
-                var d = $q.defer();
-                if (!util.checkLogin($stateParams.id)) {
-                    d.reject("notLogin");
-                } else {
-                    d.resolve();
-                }
+      url: '/goals',
+      views: {
+        "middlePane": {
+          template: require('../templates/goals.html'),
+          resolve: {
 
-                return d.promise;
+            checkLogin: function($q, $stateParams) {
+              var d = $q.defer();
+              if (!util.checkLogin($stateParams.id)) {
+                d.reject("notLogin");
+              } else {
+                d.resolve();
+              }
+
+              return d.promise;
             }
+          },
+          controller: 'GoalsController'
         },
-        controller: 'GoalsController'
+        "rightPane": {
+            template: "<notifications></notifications>"
+        }
+      }
     })
 }
 
+},{"../../../util/util":"/var/www/MyProjects/study/angular/angulartest/app/util/util.js","../templates/goals.html":"/var/www/MyProjects/study/angular/angulartest/app/modules/goal/templates/goals.html"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/goal/templates/goals.html":[function(require,module,exports){
+module.exports = '<div class="idea-feed-wrapper">\n  <div class="idea-feed-search">\n    <div class="search-wrapper">\n      <span class="search-icon"></span>\n      <input type="search" class="idea-feed-searchfield" placeholder="Search for People, Goal, Tags and more...">\n    </div>\n    <div class="idea-feed-sorters pull-right">\n      <span class="sorter-header">Sort By:</span>\n      <span class="sorter-list-options">\n        <ul class="sorter-list list-inline">\n            <li><a>Recent</a></li>\n            <li><a>By Goal</a></li>\n            <li><a>By Total Likes</a></li>\n            <li><a>Total Average IPA</a></li>\n        </ul>\n      </span>\n    </div>\n  </div>\n  <div data-block-name="idea_list_block">\n    <div class="panel panel-default" ng-repeat="goal in goals">\n      <div class="idea-tag my-idea">\n        <img src="resources/images/my-idea-tag.png">\n      </div>\n      <div class="panel-body comments-data-wrapper">\n        <div class="row issue-wrapper">\n          <div class="col-xs-2 issue-header-container">\n            <div class="profile-image-wrapper">\n              <div>\n                <img class="status-image" ng-src="{{goal.user.photo}}">\n              </div>\n            </div>\n            <div class="like-icon-wrapper">\n              <div class="like-icon">\n                <div class="like-icon-holder like-icon-image"></div>\n                <div><span>{{goal.totalLike}}</span>\n                  <span>Likes</span>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class="col-xs-10 issue-details-container">\n            <div class="issue-header">\n              {{goal.title}}\n              <p>\n                {{goal.user.name}},&nbsp;\n                <span>\n                                                21, Dec 2014\n                                            </span>\n              </p>\n            </div>\n            <div class="issue-details">\n              {{goal.description}}\n              <div class="issue-resolved">\n                <span class="issue-icon"></span>\n                <span class="issue-text">\n                                                  {{goal.idea.title}}\n                                            </span>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- ********** Mobile *********** -->\n        <div class="idea-header-container-mobile">\n          <div class="issue-header">\n            {{goal.title}}\n          </div>\n          <div class="images-container-mobile">\n            <div class="pull-left">\n              <div class="profile-image-mobile">\n                <img class="status-image" ng-src="{{goal.user.photo}}">\n              </div>\n              <div class="profile-image-text">\n                {{goal.user.name}}&nbsp;\n                <span>\n                                             21, Dec 2014\n                                            </span>\n              </div>\n            </div>\n            <div class="like-vote-wrapper pull-right">\n              <div class="like-icon-wrapper-mobile">\n                <div class="like-icon-holder like-icon-image"></div>\n              </div>\n              <div class="votes-mobile"><span>{{goal.totalLike}}</span>\n                <span>Likes</span>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class="idea-feed-details-mobile">\n          <div class="issue-details-mobile">\n            {{goal.description}}\n          </div>\n          <div>\n            <span class="issue-icon"></span>\n            <div class="issue-text-mobile">\n              {{goal.idea.title}}\n            </div>\n          </div>\n        </div>\n\n      </div>\n    </div>\n\n  </div>\n  <div class="loading" data-block-name="loading_block">\n    <span ng-show="loading">\n                                    <i class="fa fa-spinner fa-spin"></i>\n                                </span>\n  </div>\n\n</div>\n';
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/notification/directives/notification.js":[function(require,module,exports){
+'use strict';
+var util = require('../../../util/util');
 
-},{"../../../util/util":"/var/www/apps/angular/angulartest/app/util/util.js","../templates/goals.html":"/var/www/apps/angular/angulartest/app/modules/goal/templates/goals.html"}],"/var/www/apps/angular/angulartest/app/modules/goal/templates/goals.html":[function(require,module,exports){
-module.exports = '<div class="idea-feed-wrapper">\n<div class="idea-feed-search">\n                        <div class="search-wrapper">\n                            <span class="search-icon"></span>\n                            <input type="search" class="idea-feed-searchfield" placeholder="Search for People, Goal, Tags and more...">\n                        </div>\n                        <div class="idea-feed-sorters pull-right">\n                            <span class="sorter-header">Sort By:</span>\n                            <span class="sorter-list-options">\n                                <ul class="sorter-list list-inline">\n                                    <li><a>Recent</a>\n                                    </li>\n                                    <li><a>By Goal</a>\n                                    </li>\n                                    <li><a>By Total Likes</a>\n                                    </li>\n                                    <li><a>Total Average IPA</a>\n                                    </li>\n                                </ul>\n                            </span>\n                        </div>\n                    </div>                   \n                    <div data-block-name="idea_list_block">\n                        <div class="panel panel-default" ng-repeat="goal in goals">\n                              <div class="idea-tag my-idea">\n                            <img src="resources/images/my-idea-tag.png">\n                        </div>\n                        <div class="panel-body comments-data-wrapper">\n                            <div class="row issue-wrapper">\n                                <div class="col-xs-2 issue-header-container">\n                                    <div class="profile-image-wrapper">\n                                        <div>\n                                            <img class="status-image" ng-src="{{goal.user.photo}}">\n                                        </div>\n                                    </div>\n                                    <div class="like-icon-wrapper">\n                                        <div class="like-icon">\n                                            <div class="like-icon-holder like-icon-image"></div>\n                                            <div><span>{{goal.totalLike}}</span> \n                                            <span>Likes</span>\n                                             </div>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class="col-xs-10 issue-details-container">\n                                    <div class="issue-header">\n                                         {{goal.title}}\n                                        <p>\n                                            {{goal.user.name}},&nbsp;\n                                            <span>\n                                                21, Dec 2014\n                                            </span>\n                                        </p>\n                                    </div>\n                                    <div class="issue-details">\n                                        {{goal.description}}\n                                        <div class="issue-resolved">\n                                            <span class="issue-icon"></span>\n                                            <span class="issue-text">\n                                                  {{goal.idea.title}}\n                                            </span>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <!-- ********** Mobile *********** -->\n                            <div class="idea-header-container-mobile">\n                                <div class="issue-header">\n                                   {{goal.title}}\n                                </div>\n                                <div class="images-container-mobile">\n                                    <div class="pull-left">\n                                        <div class="profile-image-mobile">\n                                            <img class="status-image" ng-src="{{goal.user.photo}}">\n                                        </div>\n                                        <div class="profile-image-text">\n                                             {{goal.user.name}}&nbsp;\n                                            <span>\n                                             21, Dec 2014\n                                            </span>\n                                        </div>\n                                    </div>\n                                    <div class="like-vote-wrapper pull-right">\n                                        <div class="like-icon-wrapper-mobile">\n                                            <div class="like-icon-holder like-icon-image"></div>\n                                        </div>\n                                        <div class="votes-mobile"><span>{{goal.totalLike}}</span>\n                                            <span>Likes</span>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class="idea-feed-details-mobile">\n                                <div class="issue-details-mobile">\n                                     {{goal.description}}\n                                </div>\n                                <div>\n                                    <span class="issue-icon"></span>\n                                    <div class="issue-text-mobile">\n                                        {{goal.idea.title}}\n                                    </div>\n                                </div>\n                            </div>\n                        \n                        </div>\n                        </div>\n                        \n                    </div>\n                    <div class="loading" data-block-name="loading_block">\n                        <span ng-show="loading">\n                                    <i class="fa fa-spinner fa-spin"></i>\n                                </span>\n                    </div>\n\n</div>\n\n';
-},{}],"/var/www/apps/angular/angulartest/app/modules/user/controllers/signin.js":[function(require,module,exports){
+module.exports = function() {
+  var notificationDirective = {
+    restrict: 'E',
+    template: require('../templates/notification.html'),
+    replace: true,
+    scope: false,
+    controller: ['$scope', '$element', '$http', 'notificationCount' ,function controllerConstructor($scope, $element, $http, notificationCountFactory) {
+      $scope.getNotifications = function() {
+        $http.get(util.api.notification)
+          .success(function(response) {
+            $scope.notifications = response.data;
+            notificationCountFactory.setData(response.data.length);
+          }).error(function(err) {
+            console.log('notification error: ', err);
+          })
+      };
+    }]
+
+  }
+  return notificationDirective;
+};
+
+},{"../../../util/util":"/var/www/MyProjects/study/angular/angulartest/app/util/util.js","../templates/notification.html":"/var/www/MyProjects/study/angular/angulartest/app/modules/notification/templates/notification.html"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/notification/factory/notificationcount.js":[function(require,module,exports){
+'use strict';
+module.exports = function() {
+
+    var notification = {
+        count: 0
+    };
+    notification.setData = function(data) {
+        notification.count = angular.copy(data);
+    };
+    notification.getData = function() {
+        return notification.count;
+    };
+    return notification;
+
+};
+
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/notification/notification.module.js":[function(require,module,exports){
+'use strict';
+
+var Notification = angular.module('app.notification', [])
+.factory('notificationCount', require('./factory/notificationcount'))
+.directive('notifications', require('./directives/notification'));
+
+module.exports = Notification;
+},{"./directives/notification":"/var/www/MyProjects/study/angular/angulartest/app/modules/notification/directives/notification.js","./factory/notificationcount":"/var/www/MyProjects/study/angular/angulartest/app/modules/notification/factory/notificationcount.js"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/notification/templates/notification.html":[function(require,module,exports){
+module.exports = '<div class="notifications-list-header" ng-init="getNotifications()">\n    <div class="notification-list-header-container">\n        <i class="fa fa-bell"></i>\n        <span class="notification-header">Notifications</span>\n    </div>\n    <ul class="notification-list">\n        <li ng-repeat="notification in notifications">\n            <div class="vertical-dash"></div>\n            <div class="notification-bullet"><i class="fa fa-comment"></i>\n            </div>\n            <div class="horizontal-dash">\n                <span></span>\n            </div>\n            <div class="notification-content-wrapper">\n                <div class="notification-content">\n                    <img ng-src="{{notification.photoUrl}}">\n                    <div class="notification-text">{{notification.notificationText}}</div>\n                </div>\n                <div class="notification-time pull-right">{{notification.date}}</div>\n            </div>\n        </li>\n    </ul>\n</div>\n';
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/user/controllers/signin.js":[function(require,module,exports){
 'use strict';
 module.exports = [
     '$scope', 
@@ -327,46 +389,54 @@ module.exports = [
     }
 }];
 
-},{"../../../lang/lang":"/var/www/apps/angular/angulartest/app/lang/lang.js","../../../util/util":"/var/www/apps/angular/angulartest/app/util/util.js"}],"/var/www/apps/angular/angulartest/app/modules/user/controllers/user.js":[function(require,module,exports){
+},{"../../../lang/lang":"/var/www/MyProjects/study/angular/angulartest/app/lang/lang.js","../../../util/util":"/var/www/MyProjects/study/angular/angulartest/app/util/util.js"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/user/controllers/user.js":[function(require,module,exports){
 'use strict';
 module.exports = [
-'$scope', 
-'$http', 
-'$state',
-'$rootScope',
-'loggedInUser',
-function($scope, $http, $state,$rootScope,loggedInUser) {
+    '$scope',
+    '$http',
+    '$state',
+    '$rootScope',
+    'loggedInUser',
+    'notificationCount',
+    function($scope, $http, $state, $rootScope, loggedInUser, notificationCount) {
 
-    var util = require('../../../util/util');
-      $scope.$on('$viewContentLoaded', function(){
-          console.log("in view content loaded");
-          $http({
-            url: util.api.user, 
-            method: "GET"
-        })
-        .success(function(response){
-           if(response.success){
-               $scope.user = response;
-               loggedInUser.setData(response);
-               $rootScope.$broadcast('userdataloaded');
-           }else{
-               toastr.error(lang.errorMsg.defaultError, 'Error!');
-           }
-        })
-        .error(function(error){
-             toastr.error(lang.errorMsg.networkError, 'Error!');
+        var util = require('../../../util/util');
+        $scope.$on('$viewContentLoaded', function() {
+            console.log("in view content loaded");
+            $http({
+                    url: util.api.user,
+                    method: "GET"
+                })
+                .success(function(response) {
+                    if (response.success) {
+                        $scope.user = response;
+                        loggedInUser.setData(response);
+                        $rootScope.$broadcast('userdataloaded');
+                    } else {
+                        toastr.error(lang.errorMsg.defaultError, 'Error!');
+                    }
+                })
+                .error(function(error) {
+                    toastr.error(lang.errorMsg.networkError, 'Error!');
+                });
         });
-   });
-    $scope.doLogout = function(){
-        window.localStorage.removeItem('incubatize-user-data');
-        $state.go('signin');
+
+        $scope.getNotificationCount = function() {
+          return notificationCount.getData();
+        };
+
+        $scope.toggleNotifications = function() {
+
+        };
+        
+        $scope.doLogout = function() {
+            window.localStorage.removeItem('incubatize-user-data');
+            $state.go('signin');
+        }
     }
-}];
+];
 
-
-
-
-},{"../../../util/util":"/var/www/apps/angular/angulartest/app/util/util.js"}],"/var/www/apps/angular/angulartest/app/modules/user/factory/userdata.js":[function(require,module,exports){
+},{"../../../util/util":"/var/www/MyProjects/study/angular/angulartest/app/util/util.js"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/user/factory/userdata.js":[function(require,module,exports){
 'use strict';
 module.exports = function() {
 
@@ -385,7 +455,7 @@ module.exports = function() {
 
 
 
-},{}],"/var/www/apps/angular/angulartest/app/modules/user/router/router.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/user/router/router.js":[function(require,module,exports){
 var util = require('../../../util/util');
 module.exports = function($stateProvider, $injector, $urlRouterProvider) {
     $stateProvider
@@ -438,11 +508,11 @@ module.exports = function($stateProvider, $injector, $urlRouterProvider) {
 }
 
 
-},{"../../../util/util":"/var/www/apps/angular/angulartest/app/util/util.js","../templates/signin.html":"/var/www/apps/angular/angulartest/app/modules/user/templates/signin.html","../templates/user.html":"/var/www/apps/angular/angulartest/app/modules/user/templates/user.html"}],"/var/www/apps/angular/angulartest/app/modules/user/templates/signin.html":[function(require,module,exports){
+},{"../../../util/util":"/var/www/MyProjects/study/angular/angulartest/app/util/util.js","../templates/signin.html":"/var/www/MyProjects/study/angular/angulartest/app/modules/user/templates/signin.html","../templates/user.html":"/var/www/MyProjects/study/angular/angulartest/app/modules/user/templates/user.html"}],"/var/www/MyProjects/study/angular/angulartest/app/modules/user/templates/signin.html":[function(require,module,exports){
 module.exports = '<div class="login-contents-wrapper">\n    <!-- Logo Part Starts -->\n    <div class="logo-container">\n        <img class="login-logo" src="resources/images/incubatizelogo.png">\n    </div>\n    <!-- Logo Part Ends -->\n\n    <div class="login-content">\n        <div class="login-form-container login-content">\n\n            <!-- Login Panel Starts -->\n            <div class="login-panel-wrapper">\n                <div class="panel panel-default">\n\n                    <!-- Login Panel Header Starts -->\n                    <div class="panel-heading">\n                        <h3 class="panel-title login-header">Login</h3>\n                    </div>\n                    <message></message>\n                    <!-- Login Panel Header Ends -->\n\n                    <!-- Login Panel Body Starts -->\n                    <div class="panel-body">\n                        <form name="login_form" onsubmit="return false;">\n                            <!-- Input Group Part Starts -->\n                            <div class="input-group username-group">\n                                <span class="input-group-addon user-icon-wrapper">\n                                    <span class="glyphicon glyphicon-user user-icon"></span>\n                                </span>\n                                <input type="text" class="form-control username-holder" value="" name="email"  ng-model="loginCredentials.email"  placeholder="Username">\n                            </div>\n                            <div class="input-group password-group">\n                                <span class="input-group-addon lock-icon-wrapper">\n                                    <span class="glyphicon glyphicon-lock lock-icon"></span>\n                                </span>\n                                <input type="password" class="form-control password-holder"  name="password" value="" ng-model="loginCredentials.password" placeholder="Password">\n                            </div>\n                        </form>\n                        <!-- Input Group Part Ends -->\n\n                        <!-- Checkbox Part Starts -->\n                        <div class="col-xs-12 check-box-wrapper">\n                            <input type="checkbox" data-btn-name="remember_me" class="checkbox-icon">\n                            <span class="checkbox-text">Remember Me</span>\n                        </div>\n                        <!-- Checkbox Part Ends -->\n\n                        <!-- Login Enter Button Starts -->\n                        <div class="col-xs-12 enter-button-wrapper">\n                            <button type="button" class="btn btn-primary btn-lg btn-block enter-button" ng-click="doSignIn()" data-btn-name="login_btn">\n                                Enter\n                                <span ng-show="loading">\n                                    <i class="fa fa-spinner fa-spin"></i>\n                                </span>\n                            </button>\n                        </div>\n                        <!-- Login Enter Button Ends -->\n\n                    </div>\n                    <!-- Login Panel Body Ends -->\n\n                    <!-- Login Panel Footer Starts -->\n                    <div class="panel-footer footer-container">\n\n                        <!-- Login Box Starts -->\n                        <div class="footer-login-box">\n                            Login Using\n                        </div>\n                        <!-- Login Box Ends -->\n\n                        <!-- Login Icon Part Starts -->\n                        <div class="icon-container">\n                            <a href="#" class="facebook">\n                                <img src="resources/images/fb.png">\n                            </a>\n                            <a href="#" class="twitter">\n                                <img src="resources/images/twt.png">\n                            </a>\n                            <a href="#" class="google">\n                                <img src="resources/images/g+.png">\n                            </a>\n                        </div>\n                        <!-- Login Icon Part Ends -->\n\n                    </div>\n                    <!-- Login Panel Footer Ends -->\n\n                </div>\n            </div>\n            <!-- Login Panel Ends -->\n            <!-- Create Account Part Starts -->\n            <div class="row create-account-wrapper">\n                <a href="" class="create-account">Create Account</a>\n            </div>\n            <!-- Create Account Part Ends -->\n        </div>\n        <!-- Login Form Part Ends -->\n\n    </div>\n    <div class="login-footer login-footer-text">\n        <span>© Copyright 2014,&nbsp</span>INCUBATIZE\n    </div>\n\n</div>\n';
-},{}],"/var/www/apps/angular/angulartest/app/modules/user/templates/user.html":[function(require,module,exports){
-module.exports = '<mobilemenu></mobilemenu>\n<tabmenu></tabmenu>\n<div class="slide animation">\n    <!-- *************** Content Header Starts *************************** -->\n    <div class="row content-header" >\n        <div class="col-xs-12 header-menu">\n            <div class="logo text-left">\n                <img class="logo-small" src="resources/images/incubatizelogo.png">\n                <i class="fa fa-bars"></i>\n            </div>\n            <div class="header">\n                <div class="capture-wrapper">\n                    <i class="fa fa-camera"></i>\n                    <span class="badge">2</span>\n                    <div class="badge-text">CAPTURE</div>\n                </div>\n                <div class="capture-wrapper head-notification-icon">\n                    <i class="fa fa-bell"></i>\n                    <span class="badge">2</span>\n                </div>\n                <div class="seperator">\n                </div>\n                <div class="account-options">\n                    <div class="image-wrapper" dropdown>\n                        <img class="profile-image" ng-src="{{user.photo}}">\n                        <img class="profile-image dropdown-toggle"  dropdown-toggle  ng-src="{{user.photo}}">\n                        <ul class="dropdown-menu profile-dropdown-menu" role="menu">\n                            <li><a>Action</a>\n                            </li>\n                            <li ng-click="doLogout()"><a>Logout</a>\n                            </li>\n                        </ul>\n                    </div>\n                    <div class="profile-options">\n                        <div class="dropdown-options" dropdown>\n                            <a  class="dropdown-toggle" dropdown-toggle>\n                                <span class="pull-left">Welcome</span><b class="caret"></b>\n                            </a>\n\n                            <ul class="dropdown-menu profile-dropdown-menu" role="menu">\n                                <li><a>Action</a>\n                                </li>\n                                <li ng-click="doLogout()"><a>Logout</a>\n                                </li>\n                            </ul>\n                        </div>\n\n                        <div class="profile-name">\n                            <span>{{user.name}}</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <!-- *************** Content Header Ends ***************************** -->\n    <!-- *********************** Content Starts ************************* -->\n    <div class="row content-wrapper">\n        <!-- ******************* Left side Navigation Starts ********************* -->\n        <desktopmenu>       </desktopmenu>\n        <!-- ******************* Left side Navigation Ends *********************** -->\n        <div class="idea-feed" ui-view>\n\n        </div>\n        <!-- *********** Idea Feed Ends ********************************** -->\n        <!-- *********** Notifications Starts **************************** -->\n        <div class="notifications">\n\n        </div>\n        <!-- *********** Notifications Ends ****************************** -->\n    </div>\n    <!-- *********************** Footer Starts *********************************** -->\n    <div class="row footer text-center" >\n        <span class="footer-note">©Copyright 2014,</span>\n        <span class="footer-logo">INCUBATIZE</span> \n    </div>\n    <!-- *********************** Footer Ends ************************************* -->\n</div>\n\n';
-},{}],"/var/www/apps/angular/angulartest/app/modules/user/user.module.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/user/templates/user.html":[function(require,module,exports){
+module.exports = '<mobilemenu></mobilemenu>\n<tabmenu></tabmenu>\n<div class="slide animation">\n    <!-- *************** Content Header Starts *************************** -->\n    <div class="row content-header" >\n        <div class="col-xs-12 header-menu">\n            <div class="logo text-left">\n                <img class="logo-small" src="resources/images/incubatizelogo.png">\n                <i class="fa fa-bars"></i>\n            </div>\n            <div class="header">\n                <div class="capture-wrapper">\n                    <i class="fa fa-camera"></i>\n                    <span class="badge">2</span>\n                    <div class="badge-text">CAPTURE</div>\n                </div>\n                <div ng-click="toggleNotifications()" class="capture-wrapper head-notification-icon">\n                    <i class="fa fa-bell"></i>\n                    <span class="badge">{{getNotificationCount()}}</span>\n                </div>\n                <div class="seperator">\n                </div>\n                <div class="account-options">\n                    <div class="image-wrapper" dropdown>\n                        <img class="profile-image" ng-src="{{user.photo}}">\n                        <img class="profile-image dropdown-toggle"  dropdown-toggle  ng-src="{{user.photo}}">\n                        <ul class="dropdown-menu profile-dropdown-menu" role="menu">\n                            <li><a>Action</a>\n                            </li>\n                            <li ng-click="doLogout()"><a>Logout</a>\n                            </li>\n                        </ul>\n                    </div>\n                    <div class="profile-options">\n                        <div class="dropdown-options" dropdown>\n                            <a  class="dropdown-toggle" dropdown-toggle>\n                                <span class="pull-left">Welcome</span><b class="caret"></b>\n                            </a>\n\n                            <ul class="dropdown-menu profile-dropdown-menu" role="menu">\n                                <li><a>Action</a>\n                                </li>\n                                <li ng-click="doLogout()"><a>Logout</a>\n                                </li>\n                            </ul>\n                        </div>\n\n                        <div class="profile-name">\n                            <span>{{user.name}}</span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <!-- *************** Content Header Ends ***************************** -->\n    <!-- *********************** Content Starts ************************* -->\n    <div class="row content-wrapper">\n        <!-- ******************* Left side Navigation Starts ********************* -->\n        <desktopmenu>       </desktopmenu>\n        <!-- ******************* Left side Navigation Ends *********************** -->\n        <div class="idea-feed" ui-view="middlePane">\n\n        </div>\n        <!-- *********** Idea Feed Ends ********************************** -->\n        <!-- *********** Notifications Starts **************************** -->\n        <div class="notifications mobile-notification" ui-view="rightPane">\n\n        </div>\n        <!-- *********** Notifications Ends ****************************** -->\n    </div>\n    <!-- *********************** Footer Starts *********************************** -->\n    <div class="row footer text-center" >\n        <span class="footer-note">©Copyright 2014,</span>\n        <span class="footer-logo">INCUBATIZE</span> \n    </div>\n    <!-- *********************** Footer Ends ************************************* -->\n</div>\n\n';
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/modules/user/user.module.js":[function(require,module,exports){
 'use strict';
 
 var commonModule = require('../common/common.module'),
@@ -468,7 +538,7 @@ User = angular.module('app.user', ['ui.router','app.common'])
 });
 
 module.exports = User;
-},{"../common/common.module":"/var/www/apps/angular/angulartest/app/modules/common/common.module.js","./controllers/signin":"/var/www/apps/angular/angulartest/app/modules/user/controllers/signin.js","./controllers/user":"/var/www/apps/angular/angulartest/app/modules/user/controllers/user.js","./factory/userdata":"/var/www/apps/angular/angulartest/app/modules/user/factory/userdata.js","./router/router":"/var/www/apps/angular/angulartest/app/modules/user/router/router.js"}],"/var/www/apps/angular/angulartest/app/util/api.js":[function(require,module,exports){
+},{"../common/common.module":"/var/www/MyProjects/study/angular/angulartest/app/modules/common/common.module.js","./controllers/signin":"/var/www/MyProjects/study/angular/angulartest/app/modules/user/controllers/signin.js","./controllers/user":"/var/www/MyProjects/study/angular/angulartest/app/modules/user/controllers/user.js","./factory/userdata":"/var/www/MyProjects/study/angular/angulartest/app/modules/user/factory/userdata.js","./router/router":"/var/www/MyProjects/study/angular/angulartest/app/modules/user/router/router.js"}],"/var/www/MyProjects/study/angular/angulartest/app/util/api.js":[function(require,module,exports){
 'use strict';
 
 var baseUrl = 'resources/data/';
@@ -477,11 +547,12 @@ module.exports = {
  
   login: baseUrl + 'success.json',
   goal : baseUrl + 'goals.json',
-  user : baseUrl + 'user.json'
+  user : baseUrl + 'user.json',
+  notification: baseUrl + 'notification.json'
   // Write your apis fuctions here
 };
 
-},{}],"/var/www/apps/angular/angulartest/app/util/util.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/app/util/util.js":[function(require,module,exports){
 "use strict";
 var api = require("./api"),
   Util = {
@@ -538,10 +609,10 @@ var api = require("./api"),
   };
 module.exports = Util;
 
-},{"./api":"/var/www/apps/angular/angulartest/app/util/api.js"}],"/var/www/apps/angular/angulartest/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js":[function(require,module,exports){
+},{"./api":"/var/www/MyProjects/study/angular/angulartest/app/util/api.js"}],"/var/www/MyProjects/study/angular/angulartest/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js":[function(require,module,exports){
 (function (global){
 
-; require("/var/www/apps/angular/angulartest/bower_components/angular/angular.js");
+; require("/var/www/MyProjects/study/angular/angulartest/bower_components/angular/angular.js");
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*
  * angular-ui-bootstrap
@@ -558,10 +629,10 @@ angular.module("ui.bootstrap",["ui.bootstrap.tpls","ui.bootstrap.transition","ui
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/var/www/apps/angular/angulartest/bower_components/angular/angular.js":"/var/www/apps/angular/angulartest/bower_components/angular/angular.js"}],"/var/www/apps/angular/angulartest/bower_components/angular-ui-router/release/angular-ui-router.min.js":[function(require,module,exports){
+},{"/var/www/MyProjects/study/angular/angulartest/bower_components/angular/angular.js":"/var/www/MyProjects/study/angular/angulartest/bower_components/angular/angular.js"}],"/var/www/MyProjects/study/angular/angulartest/bower_components/angular-ui-router/release/angular-ui-router.min.js":[function(require,module,exports){
 (function (global){
 
-; require("/var/www/apps/angular/angulartest/bower_components/angular/angular.js");
+; require("/var/www/MyProjects/study/angular/angulartest/bower_components/angular/angular.js");
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
  * State-based routing for AngularJS
@@ -575,7 +646,7 @@ angular.module("ui.bootstrap",["ui.bootstrap.tpls","ui.bootstrap.transition","ui
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/var/www/apps/angular/angulartest/bower_components/angular/angular.js":"/var/www/apps/angular/angulartest/bower_components/angular/angular.js"}],"/var/www/apps/angular/angulartest/bower_components/angular/angular.js":[function(require,module,exports){
+},{"/var/www/MyProjects/study/angular/angulartest/bower_components/angular/angular.js":"/var/www/MyProjects/study/angular/angulartest/bower_components/angular/angular.js"}],"/var/www/MyProjects/study/angular/angulartest/bower_components/angular/angular.js":[function(require,module,exports){
 (function (global){
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
@@ -22737,10 +22808,10 @@ var styleDirective = valueFn({
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/var/www/apps/angular/angulartest/bower_components/jquery-validation/dist/jquery.validate.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/bower_components/jquery-validation/dist/jquery.validate.js":[function(require,module,exports){
 (function (global){
 
-; require("/var/www/apps/angular/angulartest/bower_components/jquery/dist/jquery.js");
+; require("/var/www/MyProjects/study/angular/angulartest/bower_components/jquery/dist/jquery.js");
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
  * jQuery Validation Plugin v1.13.1
@@ -24112,7 +24183,7 @@ $.extend($.fn, {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/var/www/apps/angular/angulartest/bower_components/jquery/dist/jquery.js":"/var/www/apps/angular/angulartest/bower_components/jquery/dist/jquery.js"}],"/var/www/apps/angular/angulartest/bower_components/jquery/dist/jquery.js":[function(require,module,exports){
+},{"/var/www/MyProjects/study/angular/angulartest/bower_components/jquery/dist/jquery.js":"/var/www/MyProjects/study/angular/angulartest/bower_components/jquery/dist/jquery.js"}],"/var/www/MyProjects/study/angular/angulartest/bower_components/jquery/dist/jquery.js":[function(require,module,exports){
 (function (global){
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
@@ -33326,18 +33397,18 @@ return jQuery;
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/var/www/apps/angular/angulartest/bower_components/toastr/toastr.min.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/bower_components/toastr/toastr.min.js":[function(require,module,exports){
 (function (global){
 
-; require("/var/www/apps/angular/angulartest/bower_components/jquery/dist/jquery.js");
+; require("/var/www/MyProjects/study/angular/angulartest/bower_components/jquery/dist/jquery.js");
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
-!function(e){e(["jquery"],function(e){return function(){function t(e,t,n){return f({type:O.error,iconClass:g().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=g()),v=e("#"+t.containerId),v.length?v:(n&&(v=c(t)),v)}function i(e,t,n){return f({type:O.info,iconClass:g().iconClasses.info,message:e,optionsOverride:n,title:t})}function o(e){w=e}function s(e,t,n){return f({type:O.success,iconClass:g().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return f({type:O.warning,iconClass:g().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e){var t=g();v||n(t),l(e,t)||u(t)}function d(t){var i=g();return v||n(i),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function u(t){for(var n=v.children(),i=n.length-1;i>=0;i--)l(e(n[i]),t)}function l(t,n){return t&&0===e(":focus",t).length?(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0):!1}function c(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass).attr("aria-live","polite").attr("role","alert"),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",target:"body",closeHtml:"<button>&times;</button>",newestOnTop:!0,preventDuplicates:!1,progressBar:!1}}function m(e){w&&w(e)}function f(t){function i(t){return!e(":focus",l).length||t?(clearTimeout(O.intervalId),l[r.hideMethod]({duration:r.hideDuration,easing:r.hideEasing,complete:function(){h(l),r.onHidden&&"hidden"!==b.state&&r.onHidden(),b.state="hidden",b.endTime=new Date,m(b)}})):void 0}function o(){(r.timeOut>0||r.extendedTimeOut>0)&&(u=setTimeout(i,r.extendedTimeOut),O.maxHideTime=parseFloat(r.extendedTimeOut),O.hideEta=(new Date).getTime()+O.maxHideTime)}function s(){clearTimeout(u),O.hideEta=0,l.stop(!0,!0)[r.showMethod]({duration:r.showDuration,easing:r.showEasing})}function a(){var e=(O.hideEta-(new Date).getTime())/O.maxHideTime*100;f.width(e+"%")}var r=g(),d=t.iconClass||r.iconClass;if(r.preventDuplicates){if(t.message===C)return;C=t.message}"undefined"!=typeof t.optionsOverride&&(r=e.extend(r,t.optionsOverride),d=t.optionsOverride.iconClass||d),T++,v=n(r,!0);var u=null,l=e("<div/>"),c=e("<div/>"),p=e("<div/>"),f=e("<div/>"),w=e(r.closeHtml),O={intervalId:null,hideEta:null,maxHideTime:null},b={toastId:T,state:"visible",startTime:new Date,options:r,map:t};return t.iconClass&&l.addClass(r.toastClass).addClass(d),t.title&&(c.append(t.title).addClass(r.titleClass),l.append(c)),t.message&&(p.append(t.message).addClass(r.messageClass),l.append(p)),r.closeButton&&(w.addClass("toast-close-button").attr("role","button"),l.prepend(w)),r.progressBar&&(f.addClass("toast-progress"),l.prepend(f)),l.hide(),r.newestOnTop?v.prepend(l):v.append(l),l[r.showMethod]({duration:r.showDuration,easing:r.showEasing,complete:r.onShown}),r.timeOut>0&&(u=setTimeout(i,r.timeOut),O.maxHideTime=parseFloat(r.timeOut),O.hideEta=(new Date).getTime()+O.maxHideTime,r.progressBar&&(O.intervalId=setInterval(a,10))),l.hover(s,o),!r.onclick&&r.tapToDismiss&&l.click(i),r.closeButton&&w&&w.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),i(!0)}),r.onclick&&l.click(function(){r.onclick(),i()}),m(b),r.debug&&console&&console.log(b),l}function g(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&v.remove())}var v,w,C,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:d,error:t,getContainer:n,info:i,options:{},subscribe:o,success:s,version:"2.1.0",warning:a};return b}()})}("function"==typeof define&&define.amd?define:function(e,t){"undefined"!=typeof module&&module.exports?module.exports=t(__browserify_shim_require__("jquery")):window.toastr=t(window.jQuery)});
+!function(a){a(["jquery"],function(a){return function(){function b(a,b,c){return o({type:u.error,iconClass:p().iconClasses.error,message:a,optionsOverride:c,title:b})}function c(b,c){return b||(b=p()),r=a("#"+b.containerId),r.length?r:(c&&(r=l(b)),r)}function d(a,b,c){return o({type:u.info,iconClass:p().iconClasses.info,message:a,optionsOverride:c,title:b})}function e(a){s=a}function f(a,b,c){return o({type:u.success,iconClass:p().iconClasses.success,message:a,optionsOverride:c,title:b})}function g(a,b,c){return o({type:u.warning,iconClass:p().iconClasses.warning,message:a,optionsOverride:c,title:b})}function h(a){var b=p();r||c(b),k(a,b)||j(b)}function i(b){var d=p();return r||c(d),b&&0===a(":focus",b).length?void q(b):void(r.children().length&&r.remove())}function j(b){for(var c=r.children(),d=c.length-1;d>=0;d--)k(a(c[d]),b)}function k(b,c){return b&&0===a(":focus",b).length?(b[c.hideMethod]({duration:c.hideDuration,easing:c.hideEasing,complete:function(){q(b)}}),!0):!1}function l(b){return r=a("<div/>").attr("id",b.containerId).addClass(b.positionClass).attr("aria-live","polite").attr("role","alert"),r.appendTo(a(b.target)),r}function m(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",target:"body",closeHtml:"<button>&times;</button>",newestOnTop:!0}}function n(a){s&&s(a)}function o(b){function d(b){return!a(":focus",j).length||b?j[g.hideMethod]({duration:g.hideDuration,easing:g.hideEasing,complete:function(){q(j),g.onHidden&&"hidden"!==o.state&&g.onHidden(),o.state="hidden",o.endTime=new Date,n(o)}}):void 0}function e(){(g.timeOut>0||g.extendedTimeOut>0)&&(i=setTimeout(d,g.extendedTimeOut))}function f(){clearTimeout(i),j.stop(!0,!0)[g.showMethod]({duration:g.showDuration,easing:g.showEasing})}var g=p(),h=b.iconClass||g.iconClass;"undefined"!=typeof b.optionsOverride&&(g=a.extend(g,b.optionsOverride),h=b.optionsOverride.iconClass||h),t++,r=c(g,!0);var i=null,j=a("<div/>"),k=a("<div/>"),l=a("<div/>"),m=a(g.closeHtml),o={toastId:t,state:"visible",startTime:new Date,options:g,map:b};return b.iconClass&&j.addClass(g.toastClass).addClass(h),b.title&&(k.append(b.title).addClass(g.titleClass),j.append(k)),b.message&&(l.append(b.message).addClass(g.messageClass),j.append(l)),g.closeButton&&(m.addClass("toast-close-button").attr("role","button"),j.prepend(m)),j.hide(),g.newestOnTop?r.prepend(j):r.append(j),j[g.showMethod]({duration:g.showDuration,easing:g.showEasing,complete:g.onShown}),g.timeOut>0&&(i=setTimeout(d,g.timeOut)),j.hover(f,e),!g.onclick&&g.tapToDismiss&&j.click(d),g.closeButton&&m&&m.click(function(a){a.stopPropagation?a.stopPropagation():void 0!==a.cancelBubble&&a.cancelBubble!==!0&&(a.cancelBubble=!0),d(!0)}),g.onclick&&j.click(function(){g.onclick(),d()}),n(o),g.debug&&console&&console.log(o),j}function p(){return a.extend({},m(),v.options)}function q(a){r||(r=c()),a.is(":visible")||(a.remove(),a=null,0===r.children().length&&r.remove())}var r,s,t=0,u={error:"error",info:"info",success:"success",warning:"warning"},v={clear:h,remove:i,error:b,getContainer:c,info:d,options:{},subscribe:e,success:f,version:"2.0.3",warning:g};return v}()})}("function"==typeof define&&define.amd?define:function(a,b){"undefined"!=typeof module&&module.exports?module.exports=b(__browserify_shim_require__("jquery")):window.toastr=b(window.jQuery)});
 ; browserify_shim__define__module__export__(typeof toastr != "undefined" ? toastr : window.toastr);
 
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/var/www/apps/angular/angulartest/bower_components/jquery/dist/jquery.js":"/var/www/apps/angular/angulartest/bower_components/jquery/dist/jquery.js"}],"/var/www/apps/angular/angulartest/bower_components/underscore/underscore.js":[function(require,module,exports){
+},{"/var/www/MyProjects/study/angular/angulartest/bower_components/jquery/dist/jquery.js":"/var/www/MyProjects/study/angular/angulartest/bower_components/jquery/dist/jquery.js"}],"/var/www/MyProjects/study/angular/angulartest/bower_components/underscore/underscore.js":[function(require,module,exports){
 (function (global){
 ;__browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 //     Underscore.js 1.7.0
@@ -34761,7 +34832,7 @@ return jQuery;
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/var/www/apps/angular/angulartest/index.js":[function(require,module,exports){
+},{}],"/var/www/MyProjects/study/angular/angulartest/index.js":[function(require,module,exports){
 window.name = "NG_DEFER_BOOTSTRAP!";
 
 window._ = require("underscore");
@@ -34781,4 +34852,4 @@ angular.element().ready(function() {
   angular.resumeBootstrap([App['name']]);
 });
 
-},{"./app/lang/lang":"/var/www/apps/angular/angulartest/app/lang/lang.js","./app/modules/application/app.module":"/var/www/apps/angular/angulartest/app/modules/application/app.module.js","angular":"/var/www/apps/angular/angulartest/bower_components/angular/angular.js","angularBootstrapTpl":"/var/www/apps/angular/angulartest/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js","angularRouter":"/var/www/apps/angular/angulartest/bower_components/angular-ui-router/release/angular-ui-router.min.js","jqueryValidater":"/var/www/apps/angular/angulartest/bower_components/jquery-validation/dist/jquery.validate.js","toastr":"/var/www/apps/angular/angulartest/bower_components/toastr/toastr.min.js","underscore":"/var/www/apps/angular/angulartest/bower_components/underscore/underscore.js"}]},{},["/var/www/apps/angular/angulartest/index.js"]);
+},{"./app/lang/lang":"/var/www/MyProjects/study/angular/angulartest/app/lang/lang.js","./app/modules/application/app.module":"/var/www/MyProjects/study/angular/angulartest/app/modules/application/app.module.js","angular":"/var/www/MyProjects/study/angular/angulartest/bower_components/angular/angular.js","angularBootstrapTpl":"/var/www/MyProjects/study/angular/angulartest/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js","angularRouter":"/var/www/MyProjects/study/angular/angulartest/bower_components/angular-ui-router/release/angular-ui-router.min.js","jqueryValidater":"/var/www/MyProjects/study/angular/angulartest/bower_components/jquery-validation/dist/jquery.validate.js","toastr":"/var/www/MyProjects/study/angular/angulartest/bower_components/toastr/toastr.min.js","underscore":"/var/www/MyProjects/study/angular/angulartest/bower_components/underscore/underscore.js"}]},{},["/var/www/MyProjects/study/angular/angulartest/index.js"]);

@@ -14,9 +14,9 @@
                     <span class="badge">2</span>
                     <div class="badge-text">CAPTURE</div>
                 </div>
-                <div class="capture-wrapper head-notification-icon">
+                <div ng-click="toggleNotifications()" class="capture-wrapper head-notification-icon">
                     <i class="fa fa-bell"></i>
-                    <span class="badge">2</span>
+                    <span class="badge">{{getNotificationCount()}}</span>
                 </div>
                 <div class="seperator">
                 </div>
@@ -59,12 +59,12 @@
         <!-- ******************* Left side Navigation Starts ********************* -->
         <desktopmenu>       </desktopmenu>
         <!-- ******************* Left side Navigation Ends *********************** -->
-        <div class="idea-feed" ui-view>
+        <div class="idea-feed" ui-view="middlePane">
 
         </div>
         <!-- *********** Idea Feed Ends ********************************** -->
         <!-- *********** Notifications Starts **************************** -->
-        <div class="notifications">
+        <div class="notifications mobile-notification" ui-view="rightPane">
 
         </div>
         <!-- *********** Notifications Ends ****************************** -->

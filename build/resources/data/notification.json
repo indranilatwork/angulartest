@@ -1,0 +1,23 @@
+{
+	"data": [{
+		"id": 1,
+		"photoUrl": "./resources/images/1.jpg",
+		"notificationText": "Lorem ipsum dolor sit amet, consectetur",
+		"date": "10 Sep 2014"
+		},{
+		"id": 2,
+		"photoUrl": "./resources/images/1.jpg",
+		"notificationText": "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum earum, aperiam voluptatum molestiae quos explicabo dignissimos. A harum sit aliquid, cumque, accusantium dolore non in eaque accusamus, vero placeat porro.",
+		"date": "10 Sep 2014"
+		},{
+		"id": 3,
+		"photoUrl": "./resources/images/1.jpg",
+		"notificationText": "Lorem ipsum dolor sit amet, consectetur",
+		"date": "10 Sep 2014"
+		}, {
+		"id": 4,
+		"photoUrl": "./resources/images/1.jpg",
+		"notificationText": "Lorem ipsum dolor sit amet, consectetur",
+		"date": "10 Sep 2014"
+		}]
+}
